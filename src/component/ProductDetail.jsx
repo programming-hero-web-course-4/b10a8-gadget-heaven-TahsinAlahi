@@ -1,3 +1,5 @@
+import StarRating from "./StarRating";
+
 function ProductDetail({ product }) {
   return (
     <div className="w-10/12 mx-auto p-4 border border-black rounded-3xl grid grid-cols-3 bg-white">
@@ -10,7 +12,7 @@ function ProductDetail({ product }) {
         <p
           className={`px-4 py-1 w-fit rounded-2xl border font-semibold ${
             product.availability
-              ? "bg-green-400/70 border-green-900 text-green-800"
+              ? "bg-green-400/40 border-green-900 text-green-800"
               : "bg-red-400/70 border-red-900 text-red-800"
           }`}
         >
@@ -30,7 +32,13 @@ function ProductDetail({ product }) {
           </ol>
         </div>
         <div>
-          <h2>Rating</h2>
+          <h2 className="mb-1 font-bold">Rating</h2>
+          <div className="flex gap-2 items-center">
+            <StarRating rating={product.rating} size={35} />
+            <p className="text-xl px-4 py-1 bg-gray-600/15 rounded-xl">
+              {product.rating}
+            </p>
+          </div>
         </div>
       </div>
     </div>
