@@ -4,7 +4,7 @@ import wishlistImg from "../assets/wishlist.png";
 
 function ProductDetail({ product }) {
   return (
-    <div className="w-10/12 mx-auto p-4 border border-black rounded-3xl grid grid-cols-3 bg-white">
+    <div className="w-10/12 mx-auto p-4 border border-black rounded-3xl grid grid-cols-3 bg-white absolute top-1/2 right-1/2 translate-x-1/2">
       <div className="col-span-1 bg-gray-500 rounded-xl shadow-sm">
         <img src="" alt="" />
       </div>
