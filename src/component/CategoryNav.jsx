@@ -18,7 +18,7 @@ function CategoryNav() {
   }
 
   return (
-    <div className="flex items-center justify-center flex-col gap-2 p-6 w-full border border-gray-600 shadow-lg rounded-lg">
+    <div className="flex items-center justify-center flex-col gap-2 p-6 w-full border border-gray-600 shadow-lg rounded-lg h-fit">
       {categories.map((category) => (
         <NavLink
           key={category.id}

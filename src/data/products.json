@@ -1,0 +1,342 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "iPhone 14 Pro",
+    "product_image": "https://example.com/images/iphone-14-pro.png",
+    "category": 2,
+    "price": 999.99,
+    "description": "The iPhone 14 Pro features a 6.1-inch display and the A16 Bionic chip, making it faster and more efficient.",
+    "specification": [
+      "6.1-inch Super Retina XDR display",
+      "A16 Bionic chip",
+      "Triple 12MP camera system",
+      "Face ID"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "other_field": "Available in multiple colors"
+  },
+  {
+    "product_id": 2,
+    "product_title": "MacBook Air (M2)",
+    "product_image": "https://example.com/images/macbook-air-m2.png",
+    "category": 1,
+    "price": 1199.99,
+    "description": "The MacBook Air (M2) offers impressive performance with the new M2 chip and a sleek, lightweight design.",
+    "specification": [
+      "13.6-inch Retina display",
+      "M2 chip with 8-core CPU",
+      "Up to 18 hours battery life",
+      "Touch ID"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "other_field": "Thin and lightweight design"
+  },
+  {
+    "product_id": 3,
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://example.com/images/apple-watch-series-8.png",
+    "category": 4,
+    "price": 399.0,
+    "description": "The Apple Watch Series 8 features advanced health monitoring, a large display, and a range of customizable watch faces.",
+    "specification": [
+      "Always-On Retina display",
+      "Health monitoring features",
+      "Fitness tracking",
+      "Water resistant up to 50 meters"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "other_field": "Available in various bands"
+  },
+  {
+    "product_id": 4,
+    "product_title": "iPad Pro (11-inch)",
+    "product_image": "https://example.com/images/ipad-pro-11.png",
+    "category": 1,
+    "price": 799.99,
+    "description": "The iPad Pro features the powerful M1 chip, ProMotion display, and incredible portability.",
+    "specification": [
+      "11-inch Liquid Retina display",
+      "M1 chip",
+      "Support for Apple Pencil (2nd generation)",
+      "FaceTime HD camera"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "other_field": "Perfect for professionals and creatives"
+  },
+  {
+    "product_id": 5,
+    "product_title": "AirPods Pro (2nd Generation)",
+    "product_image": "https://example.com/images/airpods-pro-2.png",
+    "category": 3,
+    "price": 249.0,
+    "description": "The AirPods Pro offers active noise cancellation, transparency mode, and a customizable fit for all-day comfort.",
+    "specification": [
+      "Active Noise Cancellation",
+      "Adaptive Transparency",
+      "Up to 30 hours of listening time with charging case",
+      "Sweat and water resistant"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "other_field": "Includes multiple ear tips"
+  },
+  {
+    "product_id": 6,
+    "product_title": "Samsung Galaxy S22 Ultra",
+    "product_image": "https://example.com/images/samsung-galaxy-s22-ultra.png",
+    "category": 2,
+    "price": 1199.99,
+    "description": "The Samsung Galaxy S22 Ultra features a stunning display and powerful performance with an integrated S Pen.",
+    "specification": [
+      "6.8-inch Dynamic AMOLED 2X display",
+      "Snapdragon 8 Gen 1 processor",
+      "Quad camera system",
+      "S Pen support"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "other_field": "Available in multiple colors"
+  },
+  {
+    "product_id": 7,
+    "product_title": "Samsung Galaxy Tab S8",
+    "product_image": "https://example.com/images/samsung-galaxy-tab-s8.png",
+    "category": 1,
+    "price": 699.99,
+    "description": "The Samsung Galaxy Tab S8 offers a versatile experience with a vibrant display and powerful performance.",
+    "specification": [
+      "11-inch LCD display",
+      "Snapdragon 8 Gen 1 processor",
+      "S Pen included",
+      "4 speakers with Dolby Atmos"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "other_field": "Great for entertainment and productivity"
+  },
+  {
+    "product_id": 8,
+    "product_title": "Apple iMac (24-inch)",
+    "product_image": "https://example.com/images/imac-24.png",
+    "category": 1,
+    "price": 1299.99,
+    "description": "The iMac features a stunning 24-inch 4.5K Retina display and is powered by Apple's M1 chip.",
+    "specification": [
+      "24-inch 4.5K Retina display",
+      "M1 chip",
+      "1080p FaceTime HD camera",
+      "Magic Keyboard and Mouse included"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "other_field": "Available in multiple colors"
+  },
+  {
+    "product_id": 9,
+    "product_title": "Samsung Galaxy Buds Pro",
+    "product_image": "https://example.com/images/samsung-galaxy-buds-pro.png",
+    "category": 3,
+    "price": 199.99,
+    "description": "The Samsung Galaxy Buds Pro delivers immersive sound and active noise cancellation.",
+    "specification": [
+      "Active Noise Cancellation",
+      "Intelligent Ambient Sound",
+      "Up to 28 hours of battery life with charging case",
+      "Water resistant"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "other_field": "Compact and comfortable design"
+  },
+  {
+    "product_id": 10,
+    "product_title": "Apple Pencil (2nd Generation)",
+    "product_image": "https://example.com/images/apple-pencil-2.png",
+    "category": 3,
+    "price": 129.0,
+    "description": "The Apple Pencil (2nd generation) is designed for precision and ease of use with compatible iPads.",
+    "specification": [
+      "Double-tap to switch tools",
+      "Magnetic attachment",
+      "Low latency",
+      "Precision drawing"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "other_field": "Compatible with iPad Pro and iPad Air"
+  },
+  {
+    "product_id": 11,
+    "product_title": "Apple AirTag",
+    "product_image": "https://example.com/images/apple-airtag.png",
+    "category": 3,
+    "price": 29.0,
+    "description": "Apple AirTag helps you keep track of your belongings using the Find My app.",
+    "specification": [
+      "Precision Finding with U1 chip",
+      "Water and dust resistant",
+      "Replaceable battery",
+      "Custom engraving options"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "other_field": "Easily attach to keys or bags"
+  },
+  {
+    "product_id": 12,
+    "product_title": "Dell XPS 13",
+    "product_image": "https://example.com/images/dell-xps-13.png",
+    "category": 1,
+    "price": 999.99,
+    "description": "The Dell XPS 13 features a stunning InfinityEdge display and premium performance.",
+    "specification": [
+      "13.4-inch FHD+ display",
+      "Intel Core i7 processor",
+      "Up to 16GB RAM",
+      "Compact design"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "other_field": "Great for professionals and students"
+  },
+  {
+    "product_id": 13,
+    "product_title": "OnePlus 10 Pro",
+    "product_image": "https://example.com/images/oneplus-10-pro.png",
+    "category": 2,
+    "price": 899.0,
+    "description": "The OnePlus 10 Pro combines flagship performance with a stunning display and fast charging.",
+    "specification": [
+      "6.7-inch AMOLED display",
+      "Snapdragon 8 Gen 1 processor",
+      "Triple camera system",
+      "Fast charging technology"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "other_field": "Smooth user experience"
+  },
+  {
+    "product_id": 14,
+    "product_title": "Google Pixel 6",
+    "product_image": "https://example.com/images/google-pixel-6.png",
+    "category": 2,
+    "price": 599.0,
+    "description": "The Google Pixel 6 offers an exceptional camera experience and a clean Android interface.",
+    "specification": [
+      "6.4-inch AMOLED display",
+      "Google Tensor processor",
+      "Dual camera system",
+      "5G capable"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "other_field": "Stock Android experience"
+  },
+  {
+    "product_id": 15,
+    "product_title": "Apple iPhone 13",
+    "product_image": "https://example.com/images/iphone-13.png",
+    "category": 2,
+    "price": 699.0,
+    "description": "The iPhone 13 features a dual-camera system, A15 Bionic chip, and a vibrant Super Retina XDR display.",
+    "specification": [
+      "6.1-inch Super Retina XDR display",
+      "A15 Bionic chip",
+      "Dual 12MP camera system",
+      "Face ID"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "other_field": "Available in multiple colors"
+  },
+  {
+    "product_id": 16,
+    "product_title": "Asus ROG Zephyrus G14",
+    "product_image": "https://example.com/images/asus-rog-zephyrus-g14.png",
+    "category": 1,
+    "price": 1499.99,
+    "description": "The Asus ROG Zephyrus G14 is a powerful gaming laptop featuring the latest AMD Ryzen processor.",
+    "specification": [
+      "14-inch QHD display",
+      "AMD Ryzen 9 processor",
+      "NVIDIA GeForce RTX 3060",
+      "Up to 32GB RAM"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "other_field": "Ideal for gamers"
+  },
+  {
+    "product_id": 17,
+    "product_title": "Fitbit Charge 5",
+    "product_image": "https://example.com/images/fitbit-charge-5.png",
+    "category": 4,
+    "price": 179.95,
+    "description": "The Fitbit Charge 5 offers advanced health tracking features and built-in GPS.",
+    "specification": [
+      "Built-in GPS",
+      "Daily Readiness Score",
+      "ECG app",
+      "Stress management tools"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "other_field": "Available in different bands"
+  },
+  {
+    "product_id": 18,
+    "product_title": "Sony WH-1000XM4",
+    "product_image": "https://example.com/images/sony-wh-1000xm4.png",
+    "category": 3,
+    "price": 348.0,
+    "description": "The Sony WH-1000XM4 wireless headphones offer industry-leading noise cancellation and exceptional sound quality.",
+    "specification": [
+      "Up to 30 hours battery life",
+      "Touch sensor controls",
+      "Adaptive Sound Control",
+      "Wearing detection"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "other_field": "Available in multiple colors"
+  },
+  {
+    "product_id": 19,
+    "product_title": "Logitech MX Master 3",
+    "product_image": "https://example.com/images/logitech-mx-master-3.png",
+    "category": 3,
+    "price": 99.99,
+    "description": "The Logitech MX Master 3 is a versatile wireless mouse designed for comfort and productivity.",
+    "specification": [
+      "Ergonomic design",
+      "Fast charging",
+      "Multi-device support",
+      "Customizable buttons"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "other_field": "Perfect for professionals"
+  },
+  {
+    "product_id": 20,
+    "product_title": "Razer BlackWidow V3",
+    "product_image": "https://example.com/images/razer-blackwidow-v3.png",
+    "category": 3,
+    "price": 169.99,
+    "description": "The Razer BlackWidow V3 is a mechanical gaming keyboard with customizable RGB lighting.",
+    "specification": [
+      "Mechanical switches",
+      "Customizable RGB lighting",
+      "Ergonomic wrist rest",
+      "Dedicated media controls"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "other_field": "Great for gamers"
+  }
+]
