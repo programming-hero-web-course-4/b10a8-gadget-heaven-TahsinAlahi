@@ -1,10 +1,8 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import cartImg from "../assets/cart.png";
 import wishlistImg from "../assets/wishlist.png";
 
 function NavBar() {
-  const navigate = useNavigate();
-
   return (
     <nav className="flex items-center justify-between lg:max-w-screen-lg lg:mx-auto text-white pt-5">
       <NavLink className="text-xl color-white font-bold cursor-pointer" to="/">
