@@ -1,3 +1,4 @@
+import CartDash from "../component/CartDash";
 import DashBoardHeader from "../component/DashBoardHeader";
 import { useState } from "react";
 
@@ -9,6 +10,7 @@ function DashBoardPage() {
         isCartActive={isCartActive}
         setIsCartActive={setIsCartActive}
       />
+      {<CartDash />}
     </>
   );
 }
