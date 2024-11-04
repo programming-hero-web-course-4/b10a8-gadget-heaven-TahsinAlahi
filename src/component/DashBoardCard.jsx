@@ -2,7 +2,7 @@ import deleteImg from "../assets/delete.png";
 import { useGadgetContext } from "../contexts/GadgetContext";
 
 function DashCard({ product, type }) {
-  const { addToCart } = useGadgetContext();
+  const { addToCart, removeFromList } = useGadgetContext();
   const isWishlist = type === "wishlist";
 
   return (
@@ -29,7 +29,10 @@ function DashCard({ product, type }) {
         )}
       </div>
       <div className="col-span-1 cursor-pointer flex items-center justify-center">
-        <div className="p-1 rounded-full border border-red-800 w-fit hover:bg-red-100">
+        <div
+          className="p-1 rounded-full border border-red-800 w-fit hover:bg-red-100"
+          onClick={() => removeFromList(product, type)}
+        >
           <img src={deleteImg} alt="Delete Button" className="w-6" />
         </div>
       </div>

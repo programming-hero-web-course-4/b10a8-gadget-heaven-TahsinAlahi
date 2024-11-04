@@ -27,9 +27,28 @@ function GadgetProvider({ children }) {
     setWishlist((prev) => [...prev, product]);
   }
 
+  function removeFromList(product, type) {
+    if (type === "cart") {
+      setCart((prev) =>
+        prev.filter((item) => item.product_id !== product.product_id)
+      );
+    } else if (type === "wishlist") {
+      setWishlist((prev) =>
+        prev.filter((item) => item.product_id !== product.product_id)
+      );
+    }
+  }
+
   return (
     <GadgetContext.Provider
-      value={{ cart, wishlist, purchasedProduct, addToCart, addToWishlist }}
+      value={{
+        cart,
+        wishlist,
+        purchasedProduct,
+        addToCart,
+        addToWishlist,
+        removeFromList,
+      }}
     >
       {children}
     </GadgetContext.Provider>

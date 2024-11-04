@@ -1,15 +1,15 @@
 import { useGadgetContext } from "../contexts/GadgetContext";
 import sortImg from "../assets/sort.png";
 import DashBoardCard from "./DashBoardCard";
-import { useState } from "react";
 
 function CartDash() {
   const { cart } = useGadgetContext();
-  const [compCart, setCompCart] = useState(cart);
+  let compCart = cart;
   const total = cart.reduce((acc, cur) => acc + cur.price, 0).toFixed(2);
 
   function handleSorting() {
-    setCompCart([...cart].sort((a, b) => a.price - b.price));
+    const tempCart = [...cart].sort((a, b) => a.price - b.price);
+    compCart = tempCart;
   }
 
   return (
