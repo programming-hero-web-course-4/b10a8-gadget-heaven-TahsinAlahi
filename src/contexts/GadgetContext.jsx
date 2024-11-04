@@ -1,9 +1,29 @@
-import { useContext, createContext } from "react";
+import { useContext, createContext, useState } from "react";
 
 const GadgetContext = createContext();
 
 function GadgetProvider({ children }) {
-  return <GadgetContext.Provider>{children}</GadgetContext.Provider>;
+  const [cart, setCart] = useState([]);
+  const [wishlist, setWishlist] = useState([]);
+  const [purchasedProduct, setPurchasedProduct] = useState([]);
+
+  function addToCart(product) {
+    const doesExist = cart.find(
+      (item) => item.product_id === product.product_id
+    );
+
+    if (doesExist) return;
+
+    setCart((prev) => [...prev, product]);
+  }
+
+  return (
+    <GadgetContext.Provider
+      value={{ cart, wishlist, purchasedProduct, addToCart }}
+    >
+      {children}
+    </GadgetContext.Provider>
+  );
 }
 
 export default GadgetProvider;

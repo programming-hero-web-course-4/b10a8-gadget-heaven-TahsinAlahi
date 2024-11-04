@@ -1,8 +1,11 @@
 import StarRating from "./StarRating";
 import cartImg from "../assets/cart_white.png";
 import wishlistImg from "../assets/wishlist.png";
+import { useGadgetContext } from "../contexts/GadgetContext";
 
 function ProductDetail({ product }) {
+  const { addToCart } = useGadgetContext();
+
   return (
     <div className="w-10/12 mx-auto p-4 border border-black rounded-3xl grid grid-cols-3 bg-white absolute top-1/2 right-1/2 translate-x-1/2">
       <div className="col-span-1 bg-gray-500 rounded-xl shadow-sm">
@@ -46,8 +49,11 @@ function ProductDetail({ product }) {
           <div
             role="button"
             className="bg-purple-600 flex items-center gap-1 px-4 py-2 rounded-xl hover:bg-purple-700 shadow-md"
+            onClick={() => addToCart(product)}
           >
-            <p className="text-xl text-white font-bold">Add To Cart</p>
+            <p className="text-xl text-white font-bold select-none">
+              Add To Cart
+            </p>
             <img
               src={cartImg}
               alt="Add to cart"
@@ -56,7 +62,7 @@ function ProductDetail({ product }) {
           </div>
           <div
             role="button"
-            className="flex items-center justify-center bg-gray-400/20 p-2 rounded-full hover:bg-gray-300 shadow-sm"
+            className="flex items-center justify-center bg-gray-400/20 p-2 rounded-full hover:bg-gray-300 shadow-sm select-none"
           >
             <img src={wishlistImg} alt="Add to wishlist" className="w-6" />
           </div>
