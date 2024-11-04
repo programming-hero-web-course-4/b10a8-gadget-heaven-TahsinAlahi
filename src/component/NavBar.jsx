@@ -1,11 +1,13 @@
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import cartImg from "../assets/cart_black.png";
 import wishlistImg from "../assets/wishlist.png";
+import { useGadgetContext } from "../contexts/GadgetContext";
 
 function NavBar() {
   const { pathname } = useLocation();
   const isHome = pathname.includes("category");
   const navigate = useNavigate();
+  const { cart, wishlist } = useGadgetContext();
 
   return (
     <nav
@@ -60,19 +62,29 @@ function NavBar() {
         </div>
         <div className="flex items-center justify-center gap-4">
           <div
-            className={`flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer ${
+            className={`flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer relative ${
               isHome ? "hover:bg-purple-200" : "hover:bg-gray-400/20"
             }`}
             onClick={() => navigate("/dashboard/cart")}
           >
+            {cart && (
+              <div className="absolute -top-2 -right-2 bg-red-600 text-white px-2 w-fit rounded-full text-center">
+                {cart.length}
+              </div>
+            )}
             <img src={cartImg} alt="Cart" className="w-5 aspect-square" />
           </div>
           <div
-            className={`flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer ${
+            className={`flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer relative ${
               isHome ? "hover:bg-purple-200" : "hover:bg-gray-400/20"
             }`}
             onClick={() => navigate("/dashboard/wishlist")}
           >
+            {wishlist && (
+              <div className="absolute -top-2 -right-2 bg-red-600 text-white px-2 w-fit rounded-full text-center">
+                {wishlist.length}
+              </div>
+            )}
             <img
               src={wishlistImg}
               alt="Wish list "
