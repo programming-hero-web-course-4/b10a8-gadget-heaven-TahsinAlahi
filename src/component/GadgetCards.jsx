@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import productInfo from "../data/products.json";
 import GadgetCard from "./GadgetCard";
 import { useParams } from "react-router-dom";
+import NoProduct from "./NoProduct";
 
 function GadgetCards() {
   const { id } = useParams();
@@ -18,7 +19,9 @@ function GadgetCards() {
     setIsLoading(false);
   }, [id]);
 
-  if (products.length === 0 || isLoading) return <>Loading...</>;
+  if (isLoading) return <>Loading...</>;
+
+  if (products.length === 0) return <NoProduct />;
 
   return (
     <div className="col-span-3 grid grid-cols-3 gap-3">

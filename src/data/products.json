@@ -17,19 +17,19 @@
   },
   {
     "product_id": "2",
-    "product_title": "iPhone 14 Pro",
-    "product_image": "https://compasia.com.ph/cdn/shop/files/iphone-12-pro-max-930746_800x.png?v=1717901657",
-    "category": "6",
-    "price": 1099.0,
-    "description": "iPhone 14 Pro features a 6.1-inch Super Retina XDR display and a powerful A16 Bionic chip.",
+    "product_title": "Motorola Edge 40 Pro",
+    "product_image": "https://www.mobiledokan.com/media/17136296876sVrT.webp",
+    "category": "2",
+    "price": 799.0,
+    "description": "The Motorola Edge 40 Pro boasts a smooth 6.67-inch OLED display with a 144Hz refresh rate and a Snapdragon 8 Gen 2 processor for top-notch performance.",
     "specification": [
-      "6.1 inch OLED display",
-      "128GB storage",
-      "Triple-camera system",
-      "Face ID technology"
+      "6.67 inch OLED display with 144Hz refresh rate",
+      "256GB storage",
+      "50 MP triple-camera system",
+      "4600mAh battery with fast charging and wireless charging support"
     ],
     "availability": true,
-    "rating": 4.8
+    "rating": 4.5
   },
   {
     "product_id": "3",

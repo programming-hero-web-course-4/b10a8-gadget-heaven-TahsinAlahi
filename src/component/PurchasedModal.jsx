@@ -1,15 +1,19 @@
 import { useGadgetContext } from "../contexts/GadgetContext";
 import successImg from "../assets/success.png";
 import { useNavigate } from "react-router-dom";
+import { useRef } from "react";
 
 export function Modal() {
   const { isModalOpen, setIsModalOpen, cart } = useGadgetContext();
   const navigate = useNavigate();
 
-  const total = cart.reduce((acc, cur) => acc + cur.price, 0).toFixed(2);
+  const total = useRef(
+    cart.reduce((acc, cur) => acc + cur.price, 0).toFixed(2)
+  );
 
   function handleClosing() {
     setIsModalOpen(false);
+    total.current = 0;
     navigate("/");
   }
 
@@ -26,10 +30,10 @@ export function Modal() {
         <h1 className="text-center text-2xl font-bold">Payment Successful</h1>
         <div className="text-center my-4">
           <h1 className="mb-3">Thanks for purchasing</h1>
-          <p>Total:${total}</p>
+          <p>Total: ${total.current}</p>
         </div>
         <button
-          className="w-full bg-gray-400 text-black text-lg py-3 font-semibold rounded-lg hover:bg-gray-500"
+          className="w-full bg-gray-400 text-black text-lg py-3 font-semibold rounded-lg hover:bg-gray-500/80 duration-200"
           onClick={handleClosing}
         >
           Close

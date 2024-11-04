@@ -8,7 +8,7 @@ function GadgetCard({ product }) {
         <img
           src={product_image}
           alt={product_title}
-          className="bg-red-500 w-full h-full object-cover object-center rounded-lg"
+          className="w-full h-full object-cover object-center rounded-lg"
         />
       </div>
       <div className="flex flex-col gap-2 justify-center h-full">

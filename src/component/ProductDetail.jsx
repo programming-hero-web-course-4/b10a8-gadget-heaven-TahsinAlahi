@@ -8,8 +8,12 @@ function ProductDetail({ product }) {
 
   return (
     <div className="w-10/12 mx-auto p-4 border border-black rounded-3xl grid grid-cols-3 bg-white absolute top-1/2 right-1/2 translate-x-1/2">
-      <div className="col-span-1 bg-gray-500 rounded-xl shadow-sm">
-        <img src="" alt="" />
+      <div className="col-span-1 rounded-xl shadow-sm flex items-center justify-center">
+        <img
+          src={product.product_image}
+          alt={product.product_title}
+          className="w-full rounded-lg"
+        />
       </div>
       <div className="col-span-2 h-full flex flex-col items-start gap-4 w-3/4 pl-7">
         <h1 className="text-2xl font-bold">{product.product_title}</h1>
