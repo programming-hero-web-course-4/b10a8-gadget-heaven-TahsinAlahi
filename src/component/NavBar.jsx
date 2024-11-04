@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <nav
       className={`lg:max-w-screen-lg lg:mx-auto p-2 pb-0 mt-2 ${
-        isHome ? " border border-gray-700 border-b-0 rounded-t-lg" : ""
+        isHome ? " border border-gray-700/30 border-b-0 rounded-t-lg" : ""
       }`}
     >
       <div
