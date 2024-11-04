@@ -1,15 +1,21 @@
 import { Link } from "react-router-dom";
 
 function GadgetCard({ product }) {
-  const { product_title, price, product_id } = product;
+  const { product_title, price, product_id, product_image } = product;
   return (
-    <div className="grid grid-rows-2 gap-2 p-3 border border-gray-500/20 rounded-lg shadow-md">
-      <div className="bg-gray-600 rounded-lg min-h-48"></div>
+    <div className="grid gap-2 p-3 border border-gray-500/20 rounded-lg shadow-md">
+      <div className="rounded-lg min-h-48 object-cover flex items-center justify-center">
+        <img
+          src={product_image}
+          alt={product_title}
+          className="bg-red-500 w-full "
+        />
+      </div>
       <div className="flex flex-col gap-2 justify-center h-full">
         <h1 className="text-2xl font-semibold">{product_title}</h1>
         <p className="text-gray-500">Price: ${price}</p>
         <Link
-          className="mt-auto w-full py-1 border-2 border-purple-500 text-purple-500 font-semibold rounded-lg text-lg text-center"
+          className="mt-auto w-full py-1 border-2 border-purple-500 text-purple-500 font-semibold rounded-lg text-lg text-center hover:bg-purple-500 hover:text-white duration-200"
           to={`/product/${product_id}`}
         >
           View Details

@@ -3,7 +3,7 @@ import HomeHeader from "../component/HomeHeader";
 
 function HomePage() {
   return (
-    <div className="lg:max-w-screen-lg lg:mx-auto">
+    <div className="lg:max-w-screen-xl lg:mx-auto">
       <HomeHeader />
       <GadgetContainer />
     </div>

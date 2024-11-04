@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="lg:max-w-screen-lg lg:mx-auto py-20">
+    <footer className="lg:max-w-screen-xl lg:mx-auto py-20">
       <div className="text-center pb-5 border-b-2 border-gray-700/20">
         <h2 className="text-3xl font-bold mb-4">Gadget Heaven</h2>
         <p className="text-gray-500">

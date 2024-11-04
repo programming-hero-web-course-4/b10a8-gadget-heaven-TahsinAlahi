@@ -6,8 +6,8 @@ function DashCard({ product, type }) {
   const isWishlist = type === "wishlist";
 
   return (
-    <div className="grid grid-cols-6 gap-2 shadow-sm rounded-md p-4">
-      <div className="col-span-1 h-full  rounded-lg">
+    <div className="grid grid-cols-6 gap-2 shadow-sm rounded-lg p-4 border border-gray-500/20">
+      <div className="col-span-1 h-full bg-red-500 rounded-lg">
         <img src={product.product_image} alt={product.product_title} />
       </div>
       <div className="col-span-4 flex flex-col items-start gap-3">
