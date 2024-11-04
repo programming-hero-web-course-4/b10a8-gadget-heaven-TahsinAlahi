@@ -5,6 +5,7 @@ import ProductPage from "./pages/ProductPage";
 import DashBoardPage from "./pages/DashBoardPage";
 import CartDash from "./component/CartDash";
 import WishlistDash from "./component/WishlistDash";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
         ],
       },
     ],
+  },
+  {
+    path: "*",
+    element: <ErrorPage />,
   },
 ]);
 
