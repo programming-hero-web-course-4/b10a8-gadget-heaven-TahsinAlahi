@@ -17,9 +17,19 @@ function GadgetProvider({ children }) {
     setCart((prev) => [...prev, product]);
   }
 
+  function addToWishlist(product) {
+    const doesExist = wishlist.find(
+      (item) => item.product_id === product.product_id
+    );
+
+    if (doesExist) return;
+
+    setWishlist((prev) => [...prev, product]);
+  }
+
   return (
     <GadgetContext.Provider
-      value={{ cart, wishlist, purchasedProduct, addToCart }}
+      value={{ cart, wishlist, purchasedProduct, addToCart, addToWishlist }}
     >
       {children}
     </GadgetContext.Provider>

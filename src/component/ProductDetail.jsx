@@ -4,7 +4,7 @@ import wishlistImg from "../assets/wishlist.png";
 import { useGadgetContext } from "../contexts/GadgetContext";
 
 function ProductDetail({ product }) {
-  const { addToCart } = useGadgetContext();
+  const { addToCart, addToWishlist } = useGadgetContext();
 
   return (
     <div className="w-10/12 mx-auto p-4 border border-black rounded-3xl grid grid-cols-3 bg-white absolute top-1/2 right-1/2 translate-x-1/2">
@@ -63,6 +63,7 @@ function ProductDetail({ product }) {
           <div
             role="button"
             className="flex items-center justify-center bg-gray-400/20 p-2 rounded-full hover:bg-gray-300 shadow-sm select-none"
+            onClick={() => addToWishlist(product)}
           >
             <img src={wishlistImg} alt="Add to wishlist" className="w-6" />
           </div>
