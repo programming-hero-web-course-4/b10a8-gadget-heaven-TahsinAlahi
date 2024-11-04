@@ -6,6 +6,7 @@ function GadgetProvider({ children }) {
   const [cart, setCart] = useState([]);
   const [wishlist, setWishlist] = useState([]);
   const [purchasedProduct, setPurchasedProduct] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   function addToCart(product) {
     const doesExist = cart.find(
@@ -39,6 +40,13 @@ function GadgetProvider({ children }) {
     }
   }
 
+  function handlePurchase() {
+    if (cart.length === 0) return;
+    setPurchasedProduct((prev) => [...prev, ...cart]);
+    setCart([]);
+    setIsModalOpen(true);
+  }
+
   return (
     <GadgetContext.Provider
       value={{
@@ -48,6 +56,9 @@ function GadgetProvider({ children }) {
         addToCart,
         addToWishlist,
         removeFromList,
+        handlePurchase,
+        isModalOpen,
+        setIsModalOpen,
       }}
     >
       {children}

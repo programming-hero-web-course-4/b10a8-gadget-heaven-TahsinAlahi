@@ -5,7 +5,7 @@ import { useGadgetContext } from "../contexts/GadgetContext";
 
 function NavBar() {
   const { pathname } = useLocation();
-  const isHome = pathname.includes("category");
+  const isHome = pathname === "/";
   const navigate = useNavigate();
   const { cart, wishlist } = useGadgetContext();
 
