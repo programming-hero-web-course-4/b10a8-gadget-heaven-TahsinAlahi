@@ -28,15 +28,15 @@ const router = createBrowserRouter([
         element: <DashBoardPage />,
         children: [
           {
-            path: "/dashboard",
+            path: "",
             element: <Navigate to="/dashboard/cart" replace />,
           },
           {
-            path: "/dashboard/cart",
+            path: "cart",
             element: <CartDash />,
           },
           {
-            path: "/dashboard/wishlist",
+            path: "wishlist",
             element: <WishlistDash />,
           },
         ],

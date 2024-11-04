@@ -1,10 +1,11 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import cartImg from "../assets/cart_black.png";
 import wishlistImg from "../assets/wishlist.png";
 
 function NavBar() {
   const { pathname } = useLocation();
   const isHome = pathname.includes("category");
+  const navigate = useNavigate();
 
   return (
     <nav
@@ -62,6 +63,7 @@ function NavBar() {
             className={`flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer ${
               isHome ? "hover:bg-purple-200" : "hover:bg-gray-400/20"
             }`}
+            onClick={() => navigate("/dashboard/cart")}
           >
             <img src={cartImg} alt="Cart" className="w-5 aspect-square" />
           </div>
@@ -69,6 +71,7 @@ function NavBar() {
             className={`flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer ${
               isHome ? "hover:bg-purple-200" : "hover:bg-gray-400/20"
             }`}
+            onClick={() => navigate("/dashboard/wishlist")}
           >
             <img
               src={wishlistImg}
