@@ -1,4 +1,5 @@
 import { useContext, createContext, useState } from "react";
+import { toast } from "react-toastify";
 
 const GadgetContext = createContext();
 
@@ -13,9 +14,11 @@ function GadgetProvider({ children }) {
       (item) => item.product_id === product.product_id
     );
 
-    if (doesExist) return;
+    if (doesExist)
+      return toast.warn(`${product.product_title} already in cart`);
 
     setCart((prev) => [...prev, product]);
+    toast.success(`${product.product_title} added to cart`);
   }
 
   function addToWishlist(product) {
@@ -33,10 +36,12 @@ function GadgetProvider({ children }) {
       setCart((prev) =>
         prev.filter((item) => item.product_id !== product.product_id)
       );
+      toast.success(`${product.product_title} removed from cart`);
     } else if (type === "wishlist") {
       setWishlist((prev) =>
         prev.filter((item) => item.product_id !== product.product_id)
       );
+      toast.success(`${product.product_title} removed from wishlist`);
     }
   }
 
