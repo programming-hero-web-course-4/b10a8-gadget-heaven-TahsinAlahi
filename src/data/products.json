@@ -2,7 +2,7 @@
   {
     "product_id": "1",
     "product_title": "Dell XPS 13",
-    "product_image": "https://example.com/images/dell-xps-13.jpg",
+    "product_image": "https://www.custommacbd.com/cdn/shop/products/xps-13-plus-custom-mac-bd_b7207c14-a33e-4f7d-8675-4d57dd7dd8ab.png?v=1655710428",
     "category": "1",
     "price": 999.99,
     "description": "Dell XPS 13 is a high-performance laptop with a stunning display and long battery life.",
@@ -18,7 +18,7 @@
   {
     "product_id": "2",
     "product_title": "iPhone 14 Pro",
-    "product_image": "https://example.com/images/iphone-14-pro.jpg",
+    "product_image": "https://compasia.com.ph/cdn/shop/files/iphone-12-pro-max-930746_800x.png?v=1717901657",
     "category": "6",
     "price": 1099.0,
     "description": "iPhone 14 Pro features a 6.1-inch Super Retina XDR display and a powerful A16 Bionic chip.",
@@ -34,7 +34,7 @@
   {
     "product_id": "3",
     "product_title": "Samsung Galaxy S23",
-    "product_image": "https://example.com/images/samsung-galaxy-s23.jpg",
+    "product_image": "https://compasia.com.ph/cdn/shop/products/galaxy-s23-ultra-588296_800x.jpg?v=1692907707",
     "category": "2",
     "price": 899.99,
     "description": "Samsung Galaxy S23 offers a sleek design, high-resolution camera, and powerful performance.",
@@ -50,7 +50,7 @@
   {
     "product_id": "4",
     "product_title": "Apple Watch Series 8",
-    "product_image": "https://example.com/images/apple-watch-series-8.jpg",
+    "product_image": "https://compasia.com.ph/cdn/shop/files/apple-watch-series-8-gps-45mm-aluminum-656295_600x.png?v=1720609969",
     "category": "4",
     "price": 399.0,
     "description": "The Apple Watch Series 8 comes with advanced health tracking features and a new temperature sensor.",
@@ -66,7 +66,7 @@
   {
     "product_id": "5",
     "product_title": "Logitech MX Master 3",
-    "product_image": "https://example.com/images/logitech-mx-master-3.jpg",
+    "product_image": "https://www.uniquecomputerbd.com/wp-content/uploads/2022/07/mx-master-3-graphite-3-4-front-500x500-1.jpg",
     "category": "3",
     "price": 99.99,
     "description": "Logitech MX Master 3 is a versatile mouse designed for comfort and productivity.",
@@ -82,7 +82,7 @@
   {
     "product_id": "6",
     "product_title": "Asus ROG Zephyrus G14",
-    "product_image": "https://example.com/images/asus-rog-zephyrus-g14.jpg",
+    "product_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/Asus-ROG-Zephyrus-G14-4-3.jpg",
     "category": "1",
     "price": 1399.99,
     "description": "Asus ROG Zephyrus G14 is a gaming laptop with powerful hardware and a compact design.",
@@ -98,7 +98,7 @@
   {
     "product_id": "7",
     "product_title": "OnePlus 11",
-    "product_image": "https://example.com/images/oneplus-11.jpg",
+    "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/OnePlus-11-(3)-4957.jpg",
     "category": "2",
     "price": 749.0,
     "description": "OnePlus 11 features a fluid AMOLED display and top-tier performance.",
@@ -114,7 +114,7 @@
   {
     "product_id": "8",
     "product_title": "Sony WH-1000XM4",
-    "product_image": "https://example.com/images/sony-wh-1000xm4.jpg",
+    "product_image": "https://sonysmart.com.bd/public/uploads/all/q5gy2RSoRIwRmFPLELLX2bu5e3XUCBPH8DtxjVGN.jpg",
     "category": "3",
     "price": 349.99,
     "description": "Sony WH-1000XM4 are wireless noise-canceling headphones with superior sound quality.",
@@ -130,7 +130,7 @@
   {
     "product_id": "9",
     "product_title": "Apple MacBook Air M2",
-    "product_image": "https://example.com/images/macbook-air-m2.jpg",
+    "product_image": "https://mcsolution.com.bd/wp-content/uploads/2021/12/MacBook-Air-M2-16-512-GB-MC-Solution-BD.webp",
     "category": "5",
     "price": 1199.0,
     "description": "MacBook Air with M2 chip delivers powerful performance in a thin and light design.",
@@ -146,7 +146,7 @@
   {
     "product_id": "10",
     "product_title": "Fitbit Charge 5",
-    "product_image": "https://example.com/images/fitbit-charge-5.jpg",
+    "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Fitbit-Charge-5-Steel-Blue-7522.jpg",
     "category": "4",
     "price": 149.95,
     "description": "Fitbit Charge 5 is a health and fitness tracker with built-in GPS and heart rate monitor.",
@@ -162,7 +162,7 @@
   {
     "product_id": "11",
     "product_title": "Google Pixel 7 Pro",
-    "product_image": "https://example.com/images/google-pixel-7-pro.jpg",
+    "product_image": "https://www.custommacbd.com/cdn/shop/products/Pixel-7-Pro-Obsidian-custom-mac-bd.jpg?v=1669539763",
     "category": "2",
     "price": 899.0,
     "description": "Google Pixel 7 Pro features a stunning camera system and pure Android experience.",
@@ -178,7 +178,7 @@
   {
     "product_id": "12",
     "product_title": "Razer Blade 15",
-    "product_image": "https://example.com/images/razer-blade-15.jpg",
+    "product_image": "https://www.pchouse.com.bd/image/cache/catalog/111A/1439/razer-blade-15-advanced-model-i7-11th-gen-rtx3070-gaming-laptop-1200x1000h.jpg",
     "category": "1",
     "price": 1999.99,
     "description": "Razer Blade 15 is a high-end gaming laptop with a sleek design and powerful specs.",
@@ -194,7 +194,7 @@
   {
     "product_id": "13",
     "product_title": "Samsung Galaxy Buds Pro",
-    "product_image": "https://example.com/images/samsung-galaxy-buds-pro.jpg",
+    "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/2119-31661.jpg",
     "category": "3",
     "price": 199.99,
     "description": "Samsung Galaxy Buds Pro offer high-quality sound and active noise cancellation.",
@@ -210,7 +210,7 @@
   {
     "product_id": "14",
     "product_title": "Microsoft Surface Laptop 5",
-    "product_image": "https://example.com/images/microsoft-surface-laptop-5.jpg",
+    "product_image": "https://www.ryans.com/storage/products/main/microsoft-surface-laptop-5-intel-core-i5-1235u-11683092174.webp",
     "category": "1",
     "price": 999.99,
     "description": "Microsoft Surface Laptop 5 is a lightweight laptop designed for portability and productivity.",
@@ -226,7 +226,7 @@
   {
     "product_id": "15",
     "product_title": "Oculus Quest 2",
-    "product_image": "https://example.com/images/oculus-quest-2.jpg",
+    "product_image": "https://assets.mofoprod.net/network/images/Oculus-Quest2.width-250.jpg",
     "category": "3",
     "price": 299.0,
     "description": "Oculus Quest 2 is a standalone VR headset with a vast library of games.",
@@ -242,7 +242,7 @@
   {
     "product_id": "16",
     "product_title": "HP Spectre x360",
-    "product_image": "https://example.com/images/hp-spectre-x360.jpg",
+    "product_image": "https://newtech.ke/wp-content/uploads/2024/08/Untitled-design-3.png",
     "category": "1",
     "price": 1399.99,
     "description": "HP Spectre x360 is a convertible laptop with a stunning design and excellent performance.",
@@ -258,7 +258,7 @@
   {
     "product_id": "17",
     "product_title": "JBL Charge 5",
-    "product_image": "https://example.com/images/jbl-charge-5.jpg",
+    "product_image": "https://www.jbl.com.ph/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw21e05685/JBL_CHARGE5_HERO_BLACK_0046_x1.png?sw=537&sfrm=png",
     "category": "3",
     "price": 179.95,
     "description": "JBL Charge 5 is a portable Bluetooth speaker with powerful sound and long battery life.",
@@ -274,7 +274,7 @@
   {
     "product_id": "18",
     "product_title": "Samsung Galaxy Z Flip 4",
-    "product_image": "https://example.com/images/samsung-galaxy-z-flip-4.jpg",
+    "product_image": "https://diamu.com.bd/wp-content/uploads/2022/08/Samsung-Galaxy-Z-Flip4-Bora-Purple-2.jpg",
     "category": "2",
     "price": 999.99,
     "description": "Samsung Galaxy Z Flip 4 is a foldable smartphone with a unique design and powerful features.",
@@ -290,7 +290,7 @@
   {
     "product_id": "19",
     "product_title": "Beats Fit Pro",
-    "product_image": "https://example.com/images/beats-fit-pro.jpg",
+    "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/3976-27705.jpg",
     "category": "3",
     "price": 199.99,
     "description": "Beats Fit Pro are wireless earbuds designed for a secure fit and great sound.",
@@ -306,7 +306,7 @@
   {
     "product_id": "20",
     "product_title": "Lenovo IdeaPad 3",
-    "product_image": "https://example.com/images/lenovo-ideapad-3.jpg",
+    "product_image": "https://www.globalbrand.com.bd/image/cache/catalog/LAPTOP/LENOVO/Lenovo-IdeaPad-3-14ITL6-82H701KAIN-Core-i3-11-Gen-1TB-HDD-8GB-RAM-Laptop-1200x1200.jpg",
     "category": "1",
     "price": 549.99,
     "description": "Lenovo IdeaPad 3 is an affordable laptop with solid performance for everyday tasks.",

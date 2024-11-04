@@ -4,11 +4,11 @@ function GadgetCard({ product }) {
   const { product_title, price, product_id, product_image } = product;
   return (
     <div className="grid gap-2 p-3 border border-gray-500/20 rounded-lg shadow-md">
-      <div className="rounded-lg min-h-48 object-cover flex items-center justify-center">
+      <div className="rounded-lg h-56 object-cover flex items-center justify-center">
         <img
           src={product_image}
           alt={product_title}
-          className="bg-red-500 w-full "
+          className="bg-red-500 w-full h-full object-cover object-center rounded-lg"
         />
       </div>
       <div className="flex flex-col gap-2 justify-center h-full">
