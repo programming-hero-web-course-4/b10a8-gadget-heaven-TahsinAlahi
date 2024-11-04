@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import productInfo from "../data/products.json";
 import ProductDetail from "../component/ProductDetail";
+import ProductDetailHeader from "../component/ProductDetailHeader";
 
 function ProductPage() {
   const { product_id } = useParams();
@@ -8,13 +9,7 @@ function ProductPage() {
 
   return (
     <div className="pt-5 mt-6 bg-purple-700 relative pb-52 mb-80">
-      <header className="text-center w-2/4 mx-auto text-white">
-        <h2 className="text-3xl font-bold mb-4">Product Details</h2>
-        <p>
-          Explore the latest gadgets that will take your experience to the next
-          level. From smart devices to the coolest accessories, we have it all!
-        </p>
-      </header>
+      <ProductDetailHeader />
       <ProductDetail product={product} />
     </div>
   );
