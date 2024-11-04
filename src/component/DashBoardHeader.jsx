@@ -1,4 +1,14 @@
-function DashBoardHeader({ isCartActive, setIsCartActive }) {
+import { NavLink } from "react-router-dom";
+
+function DashBoardHeader() {
+  function handleActiveClass({ isActive }) {
+    return `px-10 py-2 rounded-3xl ${
+      isActive
+        ? "bg-white text-purple-700 border-2 border-transparent"
+        : "border-2 border-white"
+    }`;
+  }
+
   return (
     <div className="w-full mt-4">
       <header className="w-full bg-purple-700">
@@ -10,26 +20,12 @@ function DashBoardHeader({ isCartActive, setIsCartActive }) {
             it all!
           </p>
           <div className="flex items-center justify-center gap-5">
-            <button
-              className={`px-10 py-2 rounded-3xl ${
-                isCartActive
-                  ? "bg-white text-purple-700 border-2 border-transparent "
-                  : "border-2 border-white"
-              }`}
-              onClick={() => setIsCartActive(true)}
-            >
+            <NavLink to="/dashboard/cart" className={handleActiveClass}>
               Cart
-            </button>
-            <button
-              className={`px-10 py-2 rounded-3xl ${
-                !isCartActive
-                  ? "bg-white text-purple-700 border-2 border-transparent "
-                  : "border-2 border-white"
-              }`}
-              onClick={() => setIsCartActive(false)}
-            >
+            </NavLink>
+            <NavLink to="/dashboard/wishlist" className={handleActiveClass}>
               Wishlist
-            </button>
+            </NavLink>
           </div>
         </div>
       </header>
