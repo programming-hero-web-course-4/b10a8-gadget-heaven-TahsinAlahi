@@ -1,7 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import productInfo from "../data/products.json";
 import GadgetCard from "./GadgetCard";
-import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 function GadgetCards() {
@@ -11,7 +10,7 @@ function GadgetCards() {
 
   useEffect(() => {
     setIsLoading(true);
-    if (id === "0") {
+    if (id === "0" || id === undefined) {
       setProducts([...productInfo]);
     } else {
       setProducts(productInfo.filter((product) => product.category === id));
