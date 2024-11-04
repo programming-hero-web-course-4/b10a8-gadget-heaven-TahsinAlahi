@@ -1,5 +1,5 @@
 import StarRating from "./StarRating";
-import cartImg from "../assets/cart.png";
+import cartImg from "../assets/cart_white.png";
 import wishlistImg from "../assets/wishlist.png";
 
 function ProductDetail({ product }) {

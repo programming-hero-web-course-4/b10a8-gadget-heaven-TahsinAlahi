@@ -1,58 +1,81 @@
 import { NavLink, useLocation } from "react-router-dom";
-import cartImg from "../assets/cart.png";
+import cartImg from "../assets/cart_black.png";
 import wishlistImg from "../assets/wishlist.png";
 
 function NavBar() {
   const { pathname } = useLocation();
-  const isHome = pathname === "/";
+  const isHome = pathname.includes("category");
 
   return (
     <nav
-      className={`flex items-center justify-between lg:max-w-screen-lg lg:mx-auto ${
-        isHome ? "" : "bg-white text-black"
-      } pt-5`}
+      className={`lg:max-w-screen-lg lg:mx-auto p-2 pb-0 mt-2 ${
+        isHome ? " border border-gray-700 border-b-0 rounded-t-lg" : ""
+      }`}
     >
-      <NavLink className="text-xl color-white font-bold cursor-pointer" to="/">
-        Gadget Heaven
-      </NavLink>
       <div
-        className={`flex gap-2 items-center ${isHome ? "" : "text-gray-500"}`}
+        className={`flex items-center justify-between px-4 pt-3 ${
+          isHome ? "bg-purple-700 text-white" : "bg-white text-black"
+        }`}
       >
         <NavLink
+          className="text-xl color-white font-bold cursor-pointer"
           to="/"
-          className={`${
-            isHome ? "" : "hover:bg-gray-400/20 text-gray-800 font-medium"
-          } px-4 py-1 rounded-lg`}
         >
-          Home
+          Gadget Heaven
         </NavLink>
-        <NavLink
-          to="/statistic"
-          className={`${
-            isHome ? "" : "hover:bg-gray-400/20 text-gray-800 font-medium"
-          } px-4 py-1 rounded-lg`}
+        <div
+          className={`flex gap-2 items-center ${isHome ? "" : "text-gray-500"}`}
         >
-          Statistic
-        </NavLink>
-        <NavLink
-          to="/dashboard"
-          className={`${
-            isHome ? "" : "hover:bg-gray-400/20 text-gray-800 font-medium"
-          } px-4 py-1 rounded-lg`}
-        >
-          Dashboard
-        </NavLink>
-      </div>
-      <div className="flex items-center justify-center gap-4">
-        <div className="flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer hover:bg-gray-400/20">
-          <img src={cartImg} alt="Cart" className="w-5 aspect-square" />
+          <NavLink
+            to="/"
+            className={`${
+              isHome
+                ? "hover:bg-purple-800"
+                : "hover:bg-gray-400/20 text-gray-800 font-medium"
+            } px-4 py-1 rounded-lg`}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/statistic"
+            className={`${
+              isHome
+                ? "hover:bg-purple-800"
+                : "hover:bg-gray-400/20 text-gray-800 font-medium"
+            } px-4 py-1 rounded-lg`}
+          >
+            Statistic
+          </NavLink>
+          <NavLink
+            to="/dashboard"
+            className={`${
+              isHome
+                ? "hover:bg-purple-800"
+                : "hover:bg-gray-400/20 text-gray-800 font-medium"
+            } px-4 py-1 rounded-lg`}
+          >
+            Dashboard
+          </NavLink>
         </div>
-        <div className="flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer hover:bg-gray-400/20">
-          <img
-            src={wishlistImg}
-            alt="Wish list "
-            className="w-5 aspect-square"
-          />
+        <div className="flex items-center justify-center gap-4">
+          <div
+            className={`flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer ${
+              isHome ? "hover:bg-purple-200" : "hover:bg-gray-400/20"
+            }`}
+          >
+            <img src={cartImg} alt="Cart" className="w-5 aspect-square" />
+          </div>
+          <div
+            className={`flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer ${
+              isHome ? "hover:bg-purple-200" : "hover:bg-gray-400/20"
+            }`}
+          >
+            <img
+              src={wishlistImg}
+              alt="Wish list "
+              className="w-5 aspect-square"
+            />
+          </div>
         </div>
       </div>
     </nav>

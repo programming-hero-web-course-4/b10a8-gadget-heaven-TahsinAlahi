@@ -1,8 +1,10 @@
 import GadgetContainer from "../component/GadgetContainer";
+import HomeHeader from "../component/HomeHeader";
 
 function HomePage() {
   return (
     <div className="lg:max-w-screen-lg lg:mx-auto">
+      <HomeHeader />
       <GadgetContainer />
     </div>
   );
