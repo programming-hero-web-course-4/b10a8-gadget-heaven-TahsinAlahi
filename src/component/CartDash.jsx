@@ -1,5 +1,6 @@
 import { useGadgetContext } from "../contexts/GadgetContext";
 import sortImg from "../assets/sort.png";
+import DashBoardCard from "./DashBoardCard";
 
 function CartDash() {
   const { cart } = useGadgetContext();
@@ -20,7 +21,15 @@ function CartDash() {
           </button>
         </div>
       </div>
-      <div className="flex flex-col w-full gap-3 mt-5"></div>
+      <div className="flex flex-col w-full gap-3 mt-5">
+        {cart.map((product) => (
+          <DashBoardCard
+            type={"cart"}
+            key={product.product_id}
+            product={product}
+          />
+        ))}
+      </div>
     </div>
   );
 }
