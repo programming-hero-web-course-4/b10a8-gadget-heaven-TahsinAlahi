@@ -6,9 +6,9 @@ function DashCard({ product, type }) {
   const isWishlist = type === "wishlist";
 
   return (
-    <div className="grid grid-cols-6 gap-2">
-      <div className="col-span-1 h-full bg-gray-500 rounded-lg">
-        <img src={product.product_image} alt="pro" />
+    <div className="grid grid-cols-6 gap-2 shadow-sm rounded-md p-4">
+      <div className="col-span-1 h-full  rounded-lg">
+        <img src={product.product_image} alt={product.product_title} />
       </div>
       <div className="col-span-4 flex flex-col items-start gap-3">
         <h1 className="text-2xl font-bold">{product.product_title}</h1>
@@ -18,7 +18,7 @@ function DashCard({ product, type }) {
           )}
           <span className="text-gray-700">{product.description}</span>
         </p>
-        <p className="font-semibold">Price: $ {product.price}</p>
+        <p className="font-semibold">Price: ${product.price}</p>
         {isWishlist && (
           <button
             className="px-6 py-2 bg-purple-700 text-white text-lg rounded-2xl hover:bg-purple-800"
@@ -28,7 +28,7 @@ function DashCard({ product, type }) {
           </button>
         )}
       </div>
-      <div className="col-span-1 cursor-pointer">
+      <div className="col-span-1 cursor-pointer flex items-center justify-center">
         <div className="p-1 rounded-full border border-red-800 w-fit hover:bg-red-100">
           <img src={deleteImg} alt="Delete Button" className="w-6" />
         </div>
