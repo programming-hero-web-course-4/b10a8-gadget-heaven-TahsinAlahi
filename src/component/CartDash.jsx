@@ -13,8 +13,8 @@ function CartDash() {
   }
 
   return (
-    <div className="lg:max-w-screen-lg lg:mx-auto">
-      <div className="flex items-center justify-between mt-10">
+    <div className="lg:max-w-screen-lg lg:mx-auto mt-10">
+      <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">Cart</h1>
         <div className="flex items-center gap-3">
           <h1 className="text-2xl font-bold">Total Cost: ${total}</h1>
@@ -34,7 +34,7 @@ function CartDash() {
       <div className="flex flex-col w-full gap-3 mt-5">
         {compCart.map((product) => (
           <DashBoardCard
-            type={"cart"}
+            type="cart"
             key={product.product_id}
             product={product}
           />

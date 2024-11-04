@@ -1,5 +1,6 @@
 import CartDash from "../component/CartDash";
 import DashBoardHeader from "../component/DashBoardHeader";
+import WishlistDash from "../component/WishlistDash";
 import { useState } from "react";
 
 function DashBoardPage() {
@@ -10,7 +11,7 @@ function DashBoardPage() {
         isCartActive={isCartActive}
         setIsCartActive={setIsCartActive}
       />
-      {<CartDash />}
+      {isCartActive ? <CartDash /> : <WishlistDash />}
     </>
   );
 }
