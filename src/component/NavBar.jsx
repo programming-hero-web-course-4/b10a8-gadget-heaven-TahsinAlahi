@@ -1,14 +1,16 @@
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import { useGadgetContext } from "../contexts/GadgetContext";
+import { NavLink, useLocation } from "react-router-dom";
 import LgNavButtons from "./lgNavButtons";
+import SmNavBarButtons from "./SmNavBarButtons";
+import { useState } from "react";
 
 function NavBar() {
   const { pathname } = useLocation();
   const isHome = pathname === "/" || pathname.includes("category");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav
-      className={`lg:max-w-screen-xl lg:mx-auto p-2 pb-0 mt-2 ${
+      className={`lg:max-w-screen-xl lg:mx-auto p-2 pb-0 mt-2 relative ${
         isHome ? " border border-gray-700/30 border-b-0 rounded-t-2xl" : ""
       }`}
     >
@@ -22,7 +24,11 @@ function NavBar() {
             Gadget Heaven
           </NavLink>
           <>
-            <LgNavButtons />
+            <LgNavButtons isHome={isHome} />
+            <SmNavBarButtons
+              isMenuOpen={isMenuOpen}
+              setIsMenuOpen={setIsMenuOpen}
+            />
           </>
         </div>
       </div>

@@ -3,7 +3,7 @@ import cartImg from "../assets/cart_black.png";
 import wishlistImg from "../assets/wishlist.png";
 import { useGadgetContext } from "../contexts/GadgetContext";
 
-function LgNavButtons(isHome) {
+function LgNavButtons({ isHome }) {
   const navigate = useNavigate();
   const { cart, wishlist } = useGadgetContext();
 
