@@ -7,6 +7,7 @@ import CartDash from "./component/CartDash";
 import WishlistDash from "./component/WishlistDash";
 import ErrorPage from "./pages/ErrorPage";
 import ContactPage from "./pages/ContactPage";
+import Contact from "./component/Contact";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,7 @@ const router = createBrowserRouter([
           },
           {
             path: "contact",
+            element: <Contact />,
           },
           {
             path: "feedback",

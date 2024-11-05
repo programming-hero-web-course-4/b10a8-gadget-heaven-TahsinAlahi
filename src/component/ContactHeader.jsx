@@ -10,7 +10,7 @@ function ContactHeader() {
   }
 
   return (
-    <div className="w-full mt-4">
+    <div className="w-full mt-4 mb-10">
       <header className="w-full bg-purple-700">
         <div className="lg:max-w-screen-lg lg:mx-auto p-8 text-center text-white">
           <h1 className="text-3xl font-bold">Contact Us</h1>
