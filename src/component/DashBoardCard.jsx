@@ -6,15 +6,15 @@ function DashCard({ product, type }) {
   const isWishlist = type === "wishlist";
 
   return (
-    <div className="grid grid-cols-6 gap-2 shadow-sm rounded-lg p-4 border border-gray-500/20">
-      <div className="col-span-1 h-full rounded-lg">
+    <div className="grid lg:grid-cols-6 grid-cols-1 mx-3 lg:mx-0 gap-2 shadow-sm rounded-lg p-4 border border-gray-500/20">
+      <div className="lg:col-span-1 h-full rounded-lg">
         <img
           src={product.product_image}
           alt={product.product_title}
-          className="w-full rounded-lg"
+          className="w-full rounded-lg object-cover object-center"
         />
       </div>
-      <div className="col-span-4 flex flex-col items-start gap-3">
+      <div className="lg:col-span-4 flex flex-col items-start gap-3">
         <h1 className="text-2xl font-bold">{product.product_title}</h1>
         <p>
           {isWishlist && (
@@ -32,7 +32,7 @@ function DashCard({ product, type }) {
           </button>
         )}
       </div>
-      <div className="col-span-1 cursor-pointer flex items-center justify-center">
+      <div className="lg:col-span-1 cursor-pointer flex items-center justify-center">
         <div
           className="p-1 rounded-full border border-red-800 w-fit hover:bg-red-100"
           onClick={() => removeFromList(product, type)}
