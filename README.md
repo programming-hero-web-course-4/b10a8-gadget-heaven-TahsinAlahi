@@ -7,6 +7,10 @@
 - Reusable component
 - Custom hooks
 
+## Method
+
+Context Api is used in this project
+
 ## Project Features
 
 - Single page application
