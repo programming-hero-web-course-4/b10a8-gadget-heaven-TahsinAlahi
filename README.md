@@ -1,8 +1,16 @@
-# React + Vite
+# [Gadget Heaven](https://gadget-heaven.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Fundamental React Concept Used
 
-Currently, two official plugins are available:
+- Used hooks
+- Used context api
+- Reusable component
+- Custom hooks
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Features
+
+- Single page application
+- Sorting by price
+- Narrowing product by category
+- Adding products to cart and purchase them
+- Responsiveness

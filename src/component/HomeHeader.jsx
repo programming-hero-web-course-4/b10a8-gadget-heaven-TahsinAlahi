@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bannerImg from "../assets/banner.jpg";
 
 function HomeHeader() {
@@ -13,9 +14,12 @@ function HomeHeader() {
             next level. From smart devices to the coolest accessories, we have
             it all!
           </p>
-          <button className="lg:px-6 py-2 px-4 bg-white text-xl font-semibold rounded-3xl text-purple-700 hover:bg-slate-200">
+          <Link
+            className="lg:px-6 py-2 px-4 bg-white text-xl font-semibold rounded-3xl text-purple-700 hover:bg-slate-200"
+            to="/dashboard"
+          >
             Shop Now
-          </button>
+          </Link>
         </div>
         <div className=" lg:w-2/3 w-full lg:mt-10 mt-14 mx-auto p-4 border-2 border-white rounded-3xl backdrop-blur-md object-cover shadow-md">
           <img
