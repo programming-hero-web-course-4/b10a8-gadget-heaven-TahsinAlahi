@@ -6,6 +6,7 @@ import DashBoardPage from "./pages/DashBoardPage";
 import CartDash from "./component/CartDash";
 import WishlistDash from "./component/WishlistDash";
 import ErrorPage from "./pages/ErrorPage";
+import AboutPage from "./pages/AboutPage";
 
 const router = createBrowserRouter([
   {
@@ -17,17 +18,17 @@ const router = createBrowserRouter([
         element: <HomePage />,
         children: [
           {
-            path: "/category/:id",
+            path: "category/:id",
           },
         ],
       },
 
       {
-        path: "/product/:product_id",
+        path: "product/:product_id",
         element: <ProductPage />,
       },
       {
-        path: "/dashboard",
+        path: "dashboard",
         element: <DashBoardPage />,
         children: [
           {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
             element: <WishlistDash />,
           },
         ],
+      },
+      {
+        path: "contact",
+        element: <AboutPage />,
       },
     ],
   },

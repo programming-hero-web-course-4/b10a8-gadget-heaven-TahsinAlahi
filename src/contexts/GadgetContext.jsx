@@ -26,9 +26,11 @@ function GadgetProvider({ children }) {
       (item) => item.product_id === product.product_id
     );
 
-    if (doesExist) return;
+    if (doesExist)
+      return toast.warn(`${product.product_title} already in wishlist`);
 
     setWishlist((prev) => [...prev, product]);
+    toast.success(`${product.product_title} added to wishlist`);
   }
 
   function removeFromList(product, type) {

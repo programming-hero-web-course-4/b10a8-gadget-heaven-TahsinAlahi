@@ -9,6 +9,16 @@ function NavBar() {
   const navigate = useNavigate();
   const { cart, wishlist } = useGadgetContext();
 
+  const NavButtonClass = `${
+    isHome
+      ? "hover:bg-purple-800"
+      : "hover:bg-gray-400/20 text-gray-800 font-medium"
+  } px-4 py-1 rounded-lg`;
+
+  const navSideButtonClass = `flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer relative ${
+    isHome ? "hover:bg-purple-200" : "hover:bg-gray-400/20"
+  }`;
+
   return (
     <nav
       className={`lg:max-w-screen-xl lg:mx-auto p-2 pb-0 mt-2 ${
@@ -21,10 +31,7 @@ function NavBar() {
         }`}
       >
         <div className="w-full lg:max-w-screen-lg lg:mx-auto flex items-center justify-between">
-          <NavLink
-            className="text-xl color-white font-bold cursor-pointer"
-            to="/"
-          >
+          <NavLink className="text-xl color-white font-bold" to="/">
             Gadget Heaven
           </NavLink>
           <div
@@ -32,42 +39,22 @@ function NavBar() {
               isHome ? "" : "text-gray-500"
             }`}
           >
-            <NavLink
-              to="/"
-              className={`${
-                isHome
-                  ? "hover:bg-purple-800"
-                  : "hover:bg-gray-400/20 text-gray-800 font-medium"
-              } px-4 py-1 rounded-lg`}
-            >
+            <NavLink to="/" className={NavButtonClass}>
               Home
             </NavLink>
-            <NavLink
-              to="/statistic"
-              className={`${
-                isHome
-                  ? "hover:bg-purple-800"
-                  : "hover:bg-gray-400/20 text-gray-800 font-medium"
-              } px-4 py-1 rounded-lg`}
-            >
+            <NavLink to="/statistic" className={NavButtonClass}>
               Statistic
             </NavLink>
-            <NavLink
-              to="/dashboard"
-              className={`${
-                isHome
-                  ? "hover:bg-purple-800"
-                  : "hover:bg-gray-400/20 text-gray-800 font-medium"
-              } px-4 py-1 rounded-lg`}
-            >
+            <NavLink to="/dashboard" className={NavButtonClass}>
               Dashboard
+            </NavLink>
+            <NavLink to="/contact" className={NavButtonClass}>
+              Contact Us
             </NavLink>
           </div>
           <div className="flex items-center justify-center gap-4">
             <div
-              className={`flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer relative ${
-                isHome ? "hover:bg-purple-200" : "hover:bg-gray-400/20"
-              }`}
+              className={navSideButtonClass}
               onClick={() => navigate("/dashboard/cart")}
             >
               {cart && (
@@ -78,9 +65,7 @@ function NavBar() {
               <img src={cartImg} alt="Cart" className="w-5 aspect-square" />
             </div>
             <div
-              className={`flex items-center justify-center p-3 border border-gray-500/20 rounded-full bg-white cursor-pointer relative ${
-                isHome ? "hover:bg-purple-200" : "hover:bg-gray-400/20"
-              }`}
+              className={navSideButtonClass}
               onClick={() => navigate("/dashboard/wishlist")}
             >
               {wishlist && (
