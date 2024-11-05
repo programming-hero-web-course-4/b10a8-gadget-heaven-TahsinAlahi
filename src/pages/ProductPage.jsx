@@ -8,7 +8,7 @@ function ProductPage() {
   const product = productInfo.find((p) => p.product_id === product_id);
 
   return (
-    <div className="pt-5 mt-6 bg-purple-700 relative pb-52 mb-80">
+    <div className="pt-5 mt-6 bg-purple-700 relative pb-10 lg:pb-52 lg:mb-96">
       <ProductDetailHeader />
       <ProductDetail product={product} />
     </div>

@@ -1,6 +1,6 @@
 function ProductDetailHeader() {
   return (
-    <header className="text-center w-2/4 mx-auto text-white">
+    <header className="text-center lg:w-2/4 w-3/4 mb-6 mx-auto text-white">
       <h2 className="text-3xl font-bold mb-4">Product Details</h2>
       <p>
         Explore the latest gadgets that will take your experience to the next
