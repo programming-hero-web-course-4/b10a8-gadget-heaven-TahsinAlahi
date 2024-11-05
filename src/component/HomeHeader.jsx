@@ -2,7 +2,7 @@ import bannerImg from "../assets/banner.jpg";
 
 function HomeHeader() {
   return (
-    <header className="h-[calc(100vh-75px)] p-2 pt-0 border border-gray-700/30 border-t-0 rounded-b-2xl lg:mb-96 mb-56 ">
+    <header className="h-[calc(100vh-75px)] p-2 pt-0 border border-gray-700/30 border-t-0 rounded-b-2xl lg:mb-96 mb-40 ">
       <div className="bg-purple-700 h-full w-full  rounded-b-2xl">
         <div className="text-center w-2/3 mx-auto pt-12">
           <h1 className="lg:text-4xl text-3xl font-bold text-white mb-5">

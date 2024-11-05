@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import burgerImg from "../assets/burger.png";
 
-function SmNavBarButtons({ isMenuOpen, setIsMenuOpen }) {
+function SmNavBarButtons({ isMenuOpen, setIsMenuOpen, isHome }) {
   function handleMenuClick() {
     if (isMenuOpen) setIsMenuOpen(false);
     else setIsMenuOpen(true);
@@ -9,7 +9,11 @@ function SmNavBarButtons({ isMenuOpen, setIsMenuOpen }) {
   return (
     <div className="lg:hidden">
       <div className="mr-2" onClick={handleMenuClick}>
-        <img src={burgerImg} alt="Menus" className="w-7" />
+        <img
+          src={burgerImg}
+          alt="Menus"
+          className={`w-7 ${isHome ? "invert" : ""}`}
+        />
       </div>
 
       {isMenuOpen && (

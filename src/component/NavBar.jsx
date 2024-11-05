@@ -20,7 +20,10 @@ function NavBar() {
         }`}
       >
         <div className="w-full lg:max-w-screen-lg lg:mx-auto flex items-center justify-between">
-          <NavLink className="text-xl color-white font-bold" to="/">
+          <NavLink
+            className="lg:text-xl text-2xl color-white font-bold "
+            to="/"
+          >
             Gadget Heaven
           </NavLink>
           <>
@@ -28,6 +31,7 @@ function NavBar() {
             <SmNavBarButtons
               isMenuOpen={isMenuOpen}
               setIsMenuOpen={setIsMenuOpen}
+              isHome={isHome}
             />
           </>
         </div>

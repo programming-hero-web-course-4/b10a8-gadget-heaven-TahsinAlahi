@@ -1,13 +1,13 @@
 function Footer() {
   return (
-    <footer className="lg:max-w-screen-xl lg:mx-auto py-20">
+    <footer className="lg:max-w-screen-xl lg:mx-auto lg:py-20 py-10">
       <div className="text-center pb-5 border-b-2 border-gray-700/20">
         <h2 className="text-3xl font-bold mb-4">Gadget Heaven</h2>
         <p className="text-gray-500">
           Leading the way in cutting-edge technology and innovation.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-4 p-8 w-4/5 mx-auto">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 p-8 w-4/5 mx-auto">
         <div className="text-center">
           <h1 className="text-2xl font-semibold mb-4">Service</h1>
           <ul className="flex items-center justify-center gap-1 flex-col text-center text-gray-500 ">

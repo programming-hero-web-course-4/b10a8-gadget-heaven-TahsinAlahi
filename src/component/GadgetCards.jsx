@@ -24,7 +24,7 @@ function GadgetCards() {
   if (products.length === 0) return <NoProduct />;
 
   return (
-    <div className="col-span-3 grid grid-cols-3 gap-3">
+    <div className="col-span-3 grid lg:grid-cols-3 grid-cols-1 gap-3">
       {products.map((product) => (
         <GadgetCard key={product.product_id} product={product} />
       ))}

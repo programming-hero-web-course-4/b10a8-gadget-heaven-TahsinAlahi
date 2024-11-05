@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function GadgetCard({ product }) {
   const { product_title, price, product_id, product_image } = product;
   return (
-    <div className="grid gap-2 p-3 border border-gray-500/20 rounded-lg shadow-md">
+    <div className="grid gap-2 p-3 border border-gray-500/20 rounded-lg lg:shadow-md shadow-sm">
       <div className="rounded-lg h-56 object-cover flex items-center justify-center">
         <img
           src={product_image}

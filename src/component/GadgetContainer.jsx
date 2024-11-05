@@ -4,10 +4,10 @@ import GadgetCards from "./GadgetCards";
 function GadgetContainer() {
   return (
     <>
-      <h1 className="text-3xl font-bold text-center mb-11">
+      <h1 className="lg:text-3xl text-xl font-bold text-center lg:mb-11 mb-5">
         Explore Cutting-Edge Gadgets
       </h1>
-      <div className="lg:max-w-screen-lg lg:mx-auto grid grid-cols-4 gap-2">
+      <div className="lg:max-w-screen-lg lg:mx-auto grid lg:grid-cols-4 grid-cols-1 gap-2 mx-3">
         <CategoryNav />
         <GadgetCards />
       </div>
