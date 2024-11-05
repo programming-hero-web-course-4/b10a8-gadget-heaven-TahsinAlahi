@@ -30,7 +30,7 @@ function Contact() {
   return (
     <main className="lg:max-w-screen-lg lg:mx-auto">
       <h1 className="text-2xl font-bold text-center mb-6">Contact us</h1>
-      <div className="w-full flex items-center justify-around gap-3">
+      <div className="w-full flex lg:flex-row flex-col items-center justify-around gap-3">
         {contacts.map((contact) => (
           <ContactItem key={contact.name} contact={contact} />
         ))}
