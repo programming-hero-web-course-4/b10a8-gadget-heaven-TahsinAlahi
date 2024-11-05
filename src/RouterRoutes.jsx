@@ -8,6 +8,7 @@ import WishlistDash from "./component/WishlistDash";
 import ErrorPage from "./pages/ErrorPage";
 import ContactPage from "./pages/ContactPage";
 import Contact from "./component/Contact";
+import Feedback from "./component/Feedback";
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,7 @@ const router = createBrowserRouter([
           },
           {
             path: "feedback",
+            element: <Feedback />,
           },
         ],
       },
